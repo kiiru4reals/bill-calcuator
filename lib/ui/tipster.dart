@@ -46,7 +46,7 @@ class _TipsterState extends State<Tipster> {
                       )),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text("\$ ${calculateTotalPerPerson(_billAmount, _personCounter, _tipPercentage)}", style: TextStyle(
+                        child: Text("KES. ${calculateTotalPerPerson(_billAmount, _personCounter, _tipPercentage)}", style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 34.0,
                             color: _purple
@@ -165,7 +165,7 @@ class _TipsterState extends State<Tipster> {
                       children: <Widget>[
                         Text("Tip", style: TextStyle(color: Colors.grey.shade700
                         ),),
-                        Text("\$ ${ (calculateTotalTip(_billAmount, _personCounter, _tipPercentage)).toStringAsFixed(2)}", style: TextStyle(
+                        Text("KES. ${ (calculateTotalTip(_billAmount, _personCounter, _tipPercentage)).toStringAsFixed(2)}", style: TextStyle(
                             color: _purple,
                             fontWeight: FontWeight.bold,
                             fontSize: 17.0
@@ -223,8 +223,4 @@ class _TipsterState extends State<Tipster> {
 
     return totalTip;
   }
-
-
-
-
 }
